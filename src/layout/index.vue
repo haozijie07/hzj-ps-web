@@ -1,9 +1,7 @@
 <template>
   <v-layout class="rounded rounded-md">
     <NavigationDrawer />
-
-    <v-app-bar title="Application bar"></v-app-bar>
-
+    <VAppBar />
     <VMain />
   </v-layout>
 </template>
@@ -11,6 +9,7 @@
 <script setup lang="tsx">
 import NavigationDrawer from './components/navigation-drawer.vue'
 import VMain from './components/main.vue'
+import VAppBar from './components/app-bar.vue'
 </script>
 
 <style scoped lang="scss">

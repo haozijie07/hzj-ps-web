@@ -26,12 +26,23 @@
 
     <v-list density="compact" nav active-color="#369D4F">
       <v-list-item prepend-icon="mdi-home-city" title="首页" value="home" to="/home"></v-list-item>
-      <v-list-item prepend-icon="mdi-account" title="笔记" value="note" to="/note"></v-list-item>
+      <v-list-item
+        prepend-icon="mdi-book-open-outline"
+        title="笔记"
+        value="note"
+        to="/note"
+      ></v-list-item>
       <v-list-item
         prepend-icon="mdi-account-group-outline"
         title="组件"
         value="components"
         to="/components"
+      ></v-list-item>
+      <v-list-item
+        prepend-icon="mdi-account"
+        title="用户"
+        value="user"
+        to="/system/user"
       ></v-list-item>
     </v-list>
   </v-navigation-drawer>

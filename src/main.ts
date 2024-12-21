@@ -3,6 +3,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 const app = createApp(App)
 
+/* ---------------------------------- scss ---------------------------------- */
+import '@/scss/index.scss'
+
 /* ---------------------------------- pinia --------------------------------- */
 import { createPinia } from 'pinia'
 app.use(createPinia())
@@ -36,6 +39,11 @@ const vuetify = createVuetify({
     },
   },
 })
+
+/* --------------------------------- ag-grid -------------------------------- */
+import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community'
+ModuleRegistry.registerModules([AllCommunityModule])
+
 app.use(vuetify)
 
 app.mount('#app')

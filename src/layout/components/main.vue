@@ -17,7 +17,7 @@
     padding: 10px;
     box-sizing: content-box;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   }
 }
